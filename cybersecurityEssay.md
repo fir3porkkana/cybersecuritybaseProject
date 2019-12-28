@@ -79,7 +79,7 @@ On any page that lists out user-inputted content, there are no checks for XSS. N
 
 ### How to fix
 
-Spring has built in XSS-prevention. We can deploy this by switching the utext spring-elements used in the html to print out everything to the protected text-elements. Additionally, adding any sort of simple input sanitisation could go a long way in restricting the XSS-opportunities users have. A simple regex check for inputs in the forms or controllers could be a fine start.
+Thymeleaf has built in XSS-prevention. We can deploy this by switching the utext expression used in the html to print out everything to the escaped text expression. Additionally, adding any sort of simple input sanitisation could go a long way in restricting the XSS-opportunities users have. A simple regex check for inputs in the forms or controllers could be a fine start.
 ___
 
 
