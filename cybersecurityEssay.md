@@ -1,25 +1,3 @@
-XSS doned - cross site scripting
-
-admin page - broken access control, sensitive data exposure
-
-code available online, accounts hard coded into the system - broken authentication
-
-see and delete individual account pages - broken authentication, broken access control
-
-fuzzing, loginpaskan loggaaminen: broken authentication, insufficient logging
-
-
-
-cross site scripting, broken access control, sensitive data exposure, broken authentication, insufficient logging (5)
-
-
-
- current username: final String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
-
-
-Link:
-
-
 
 ## Flaw 1
 
