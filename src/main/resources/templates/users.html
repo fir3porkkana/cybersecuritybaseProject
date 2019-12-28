@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>All attendees and signed up users.</title>
+    </head>
+    <h2>its unhackable innit</h2>
+    
+    <body>
+
+        <p>in case yall numbnuts forget ur own passwords or where you live, no distributerino</p>
+        
+        <ul>
+            <li th:each="user : ${users}">
+                <span th:utext="${user}">item name</span>
+            </li>
+        </ul>
+        <ul>
+            <li th:each="signup : ${signups}">
+                participant name: <span th:utext="${signup.name}">item name</span>
+                address: <span th:utext="${signup.address}">item name</span>
+            </li>
+        </ul>
+
+    </body>
+</html>

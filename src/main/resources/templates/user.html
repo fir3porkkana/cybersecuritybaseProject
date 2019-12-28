@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>account.</title>
+    </head>
+    <h2>Account page</h2>
+    
+    <body>
+
+        <p>this is your account</p>
+        
+        <p> your username: <span th:utext="${user.username}">item name</span> </p>
+        <p> your password: <span th:utext="${user.password}">item name</span> </p>
+        
+        <p>should you wish to delete your account, type in your username to and press the button</p>
+        
+        <form action="#" th:action="@{/delete/{user.username}}" method="POST">
+            <input type="text" name="name" id="name" />
+            <p><input type="submit" value="click here to delete your account" /></p>
+        </form>
+
+    </body>
+</html>
